@@ -589,25 +589,11 @@
             여기서 HTML 전체를 받게 됨
           */
 
-          const reportHtml =
-            await response.text();
+          statusBox.className = "status ok";
+statusBox.textContent = "정상적으로 제출되었습니다.";
+statusBox.style.display = "block";
 
-
-          reportResult.innerHTML =
-            reportHtml;
-
-
-          reportResult.classList.add(
-            "show"
-          );
-
-
-          statusBox.className =
-            "status ok";
-
-
-          statusBox.textContent =
-            "분석이 완료되었습니다.";
+form.reset();
 
 
           statusBox.style.display =
